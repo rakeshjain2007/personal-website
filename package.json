@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/rakeshjain2007/personal-website/issues"
   },
-  "homepage": "https://rakeshjain2007.github.io/personal-site",
+  "homepage": "https://rakeshjain2007.github.io/personal-website",
   "dependencies": {
     "@emotion/core": "^10.1.1",
     "@material-ui/core": "^4.12.4",
