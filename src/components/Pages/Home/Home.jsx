@@ -5,28 +5,28 @@ import about from "../../../images/about.jpg";
 
 const Home = () => {
   const [data, setData] = useState([]);
-  useEffect(() => {
-    let source = axios.CancelToken.source();
-    let unmounted = false;
-    axios
-      .get("https://personal-website--backend.herokuapp.com/project", {cancelToken: source.token})
-      .then(({ data }) => {
-        if(!unmounted) {
-          setData(data.data.reverse());
-        }
-      })
-      .catch(error => {
-        if(axios.isCancel(error)) {
-          console.log(`request cancelled:${error.message}`);
-        } else {
-          throw error;
-        }
-      }); 
-    return () => {
-      unmounted = true;
-      source.cancel("Cancelling in cleanup");
-    };
-  }, []);
+  // useEffect(() => {
+  //   let source = axios.CancelToken.source();
+  //   let unmounted = false;
+  //   axios
+  //     .get("https://personal-website--backend.herokuapp.com/project", {cancelToken: source.token})
+  //     .then(({ data }) => {
+  //       if(!unmounted) {
+  //         setData(data.data.reverse());
+  //       }
+  //     })
+  //     .catch(error => {
+  //       if(axios.isCancel(error)) {
+  //         console.log(`request cancelled:${error.message}`);
+  //       } else {
+  //         throw error;
+  //       }
+  //     }); 
+  //   return () => {
+  //     unmounted = true;
+  //     source.cancel("Cancelling in cleanup");
+  //   };
+  // }, []);
 
   return (
     <div>
