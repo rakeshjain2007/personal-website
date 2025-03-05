@@ -48,7 +48,7 @@ const Contact = () => {
                     <div className="col-md-4">
                         <div className="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
                             <i className="ion-ios-email-outline"></i>
-                            <p>rakeshvora2007@gmail.com</p>
+                            <p>rakeshjain2007@gmail.com</p>
                         </div>
                     </div>
                     <div className="col-md-4">

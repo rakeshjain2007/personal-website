@@ -13,10 +13,11 @@ module.exports = {
     filename: "[name].bundle.js"
   },
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
     historyApiFallback: true,
     compress: true,
-    inline: true,
     port: 8080
   },
   // resolve: {

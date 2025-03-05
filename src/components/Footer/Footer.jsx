@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="col-md-8">
             <p className="copyright">
               Copyright: <span>2020</span> . Design and Developed by{" "}
-              <a href="https://github.com/rakeshvora2007">Rakesh Jain</a>
+              <a href="https://github.com/rakeshjain2007">Rakesh Jain</a>
             </p>
           </div>
           <div className="col-md-4">
@@ -19,7 +19,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/rakeshvora2007" className="Twitter">
+                <a href="https://github.com/rakeshjain2007" className="Twitter">
                   <i className="ion-social-github"></i>
                 </a>
               </li>
