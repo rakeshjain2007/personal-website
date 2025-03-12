@@ -9,7 +9,7 @@ const WorkEx = () => {
 
   useEffect(() => {
     axios
-      .get("https://personal-website--backend.herokuapp.com/work")
+      .get("https://personal-website-backend-z7zf.onrender.com/work")
       .then(({ data }) => {
         setData(data.data.reverse());
       });

@@ -8,6 +8,16 @@ import { Loading } from "../../Reusables/Loading.jsx";
 
 const Projects = () => {
   const [data, setData] = useState([]);
+  
+  return (
+    <>
+    <Headliner
+        headline="Projects"
+        quote="It's not who you are underneath, It's what you do that defines you."
+      />
+     Under Maintenance
+    </>
+  )
 
   useEffect(() => {
     axios

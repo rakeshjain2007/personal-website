@@ -9,9 +9,12 @@ const Education = () => {
 
   useEffect(() => {
     axios
-      .get("https://personal-website--backend.herokuapp.com/education")
+      .get("https://personal-website-backend-z7zf.onrender.com/education")
       .then(({ data }) => {
-        setData(data.data);
+        setData(data);
+      })
+     .catch(function (error) {
+        console.log(error.toJSON());
       });
   }, []);
   
